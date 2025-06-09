@@ -21,6 +21,7 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
+import com.itckc.doubleh.Navigation.Screen
 import com.itckc.doubleh.R
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -99,7 +100,7 @@ fun CartScreen(navController: NavController) {
                 horizontalArrangement = Arrangement.SpaceBetween
             ) {
                 Button(
-                    onClick = { /* TODO: Xử lý thanh toán */ },
+                    onClick = { navController.navigate(Screen.CheckOut.route) },
                     colors = ButtonDefaults.buttonColors(containerColor = Color.Blue)
                 ) {
                     Text("Thanh toán", color = Color.White)

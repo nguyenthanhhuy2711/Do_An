@@ -25,7 +25,7 @@ fun EditProfileScreen(navController: NavController) {
     var name by remember { mutableStateOf("Nguyễn Thanh Huy") }
     var email by remember { mutableStateOf("0306221026@gmail.com") }
     var phone by remember { mutableStateOf("0326037833") }
-    var address by remember { mutableStateOf("399/6A, Bình Hưng Hòa B, Bình Tân, ...") }
+    var address by remember { mutableStateOf("399/6A, Bình Hưng Hòa B, Bình Tân, TP.HCM") }
     var password by remember { mutableStateOf("0306221***") }
 
     Scaffold(

@@ -38,8 +38,8 @@ fun ProductDetailScreen(navController: NavHostController) {
                     Text("Chi tiết sản phẩm", color = Color.Black)
                 },
                 navigationIcon = {
-                    IconButton(onClick = { /* TODO: Handle back */ }) {
-                        Icon(Icons.Default.ArrowBack, contentDescription = "Back", tint = Color.Black)
+                    IconButton(onClick = { navController.popBackStack() }) {
+                        Icon(Icons.Default.ArrowBack, contentDescription = "Back")
                     }
                 },
                 colors = TopAppBarDefaults.topAppBarColors(containerColor = Color.White)
